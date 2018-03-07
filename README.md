@@ -1,5 +1,5 @@
-# NLP Roadmap [WIP]
+# NLP Course outline on cousera
 
 
-![roadmap](./roadmap.png)
+
 

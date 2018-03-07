@@ -1,0 +1,162 @@
+{
+    "name": "NLP Course",
+    "children": [{
+        "name": "Week 1",
+        "children": [{
+            "name": "Main approaches in NLP",
+            "children": [{
+                "name": "Rule-based methods (High precision, Low recall)",
+                "children": [{
+                    "name": "Regular Expression"
+                }, {
+                    "name": "Context free grammar (Semantic slot filling)"
+                }, {
+                    "name": "..."
+                }]
+            }, {
+                "name": "Probabilitistic modeling and Machine Learning",
+                "children": [{
+                    "name": "Likelihood maximization"
+                }, {
+                    "name": "Linear Classification"
+                }, {
+                    "name": "Conditional Random Fields (CRFs)"
+                }, {
+                    "name": "..."
+                }]
+            }, {
+                "name": "Deep Learning",
+                "children": [{
+                    "name": "Convolutional Neural Network"
+                }, {
+                    "name": "Recurrent Neural Network"
+                }, {
+                    "name": "..."
+                }]
+            }]
+        },{
+            "name": "Linguistic",
+            "children": [{
+                "name": "NLP Pyramid",
+                "children": [{
+                    "name": "Morphology (Form of words)"
+                }, {
+                    "name": "Syntax (Relation)"
+                }, {
+                    "name": "Semantics (Meaning)"
+                }, {
+                    "name": "Pragmatics"
+                }]
+            }]
+        }, {
+            "name": "Text Classification",
+            "children": [{
+                "name": "Text preprocessing",
+                "children": [{
+                    "name": "What is 'text'?",
+                    "children": [{
+                        "name": "Characters"
+                    }, {
+                        "name": "Words"
+                    }, {
+                        "name": "Phrases"
+                    }, {
+                        "name": "Sentences"
+                    }, {
+                        "name": "Paragraph"
+                    }]
+                }, {
+                    "name": "Preprocess text as 'word'",
+                    "children": [{
+                        "name": "Tokenization"
+                    }, {
+                        "name": "Token normalization",
+                        "children": [{
+                            "name": "Stemming (playing -> play)"
+                        }, {
+                            "name": "Lemmatization (feet -> foot)"
+                        }, {
+                            "name": "Capital Letter (America -> america)"
+                        }, {
+                            "name": "Acronyms (DM -> Direct Message)"
+                        }]
+                    }]
+                }]
+            }, {
+                "name": "Text to features",
+                "children": [{
+                    "name": "Bag of Words",
+                    "children": [{
+                        "name": "Problems",
+                        "children": [{
+                            "name": "Loose word order"
+                        }, {
+                            "name": "Counters are not normalized"
+                        }]
+                    }]
+                }, {
+                    "name": "n-gram Bag of Words",
+                    "children": [{
+                        "name": "Problems",
+                        "children": [{
+                            "name": "Lots of features"
+                        }]
+                    }]
+                }, {
+                    "name": "TF-IDF",
+                    "children": [{
+                        "name": "Binary"
+                    }, {
+                        "name": "Raw counts"
+                    }, {
+                        "name": "Term Frequency"
+                    }, {
+                        "name": "Log normalization"
+                    }, {
+                        "name": "Double normalization"
+                    }]
+                }]
+            }, {
+                "name": "Linear model",
+                "children": [{
+                    "name": "Logistic Regression",
+                    "children": [{
+                        "name": "Advantages",
+                        "children": [{
+                            "name": "Can handle sparse data"
+                        }, {
+                            "name": "Fast to train"
+                        }, {
+                            "name": "Weight can be  interpret"
+                        }]
+                    }]
+                }]
+            }, {
+                "name": "Hashing tricks",
+                "children": [{
+                    "name": "huge data",
+                    "children": [{
+                        "name": "{ n-gram -> hash(n-gram) % 2^20"
+                    }]
+                }]
+            }, {
+                "name": "Neural Way",
+                "children": [{
+                    "name": "Word2Vec"
+                }, {
+                    "name": "Convolutional Neural Network"
+                }, {
+                    "name": "CNN with characters level"
+                }]
+            }]
+        }]
+    }, {
+        "name": "Week 2"
+    },{
+        "name": "Week 3"
+    },{
+        "name": "Week 4"
+    }, {
+        "name": "Week 5"
+    }]
+}
