@@ -151,7 +151,162 @@
             }]
         }]
     }, {
-        "name": "Week 2"
+        "name": "Week 2",
+        "children": [{
+            "name": "Language Modeling",
+            "children": [{
+                "name": "Count n-gram"
+            }, {
+                "name": "Predict Probability of sequence of words",
+                "children": [{
+                    "name": "Chain rule",
+                    "children": [{
+                        "name": "P(w) = P(w_1)P(w_2|w_1)p(w_3|w_1w_2)...P(w_k|w_(1..wk-1))"
+                    },{
+                        "name": "Problem",
+                        "children": [{
+                            "name": "P(wk|w1..wk-1) is complicated"
+                        }]
+                    }]
+                }, {
+                    "name": "Markov assumption (last n terms)",
+                    "children": [{
+                        "name": "P(w_i|w_1...w_(i-1)) = P(wi|w_(i-n+1)...w_(i-1))"
+                    }]
+                }, {
+                    "name": "Add fake word",
+                    "children": [{
+                        "name": "Fake 'start' word",
+                        "children": [{
+                            "name": "To fix probability of first word"
+                        }]
+                    }, {
+                        "name": "Fake 'end' word",
+                        "children": [{
+                            "name": "To fix probability of all word"
+                        }]
+                    }]
+                }, {
+                    "name": "Bigram model",
+                }]
+            }]
+        }, {
+            "name": "Log-likelihood"
+        }, {
+            "name": "Evaluate model",
+            "children": [{
+                "name": "Extrinsic",
+                "children": [{
+                    "name": "Quality of downstream task"
+                }]
+            }, {
+                "name": "Intrinsic",
+                "children": [{
+                    "name": "Hold-out perplexity"
+                }]
+            }]
+        }, {
+            "name": "Perplexity (lower is better)",
+            "children": [{
+                "name": "Perplexity = p(w_test) ^ (-1/N) ส่วนกลับของ log-likelihood"
+            }, {
+                "name": "Problems",
+                "children": [{
+                    "name": "Out of vocab (OOV)",
+                    "children": [{
+                        "name": "Perplextity = inf."
+                    }, {
+                        "name": "Add <UNK> word to solve Perplextity = inf."
+                    }]
+                }, {
+                    "name": "NO OOV words but Perplexity = inf.",
+                    "children": [{
+                        "name": "Use Smoothing Technique"
+                    }]
+                }]
+            }]
+        }, {
+            "name": "Smoothing",
+            "children": [{
+                "name": "Laplacian (add-k smoothing)"
+            }, {
+                "name": "Longer n-grams (Katz backoff)"
+            }, {
+                "name": "Interpolation smoothing"
+            }, {
+                "name": "Absolute discounting"
+            }, {
+                "name": "Kneser-Ney smoothing"
+            }, {
+                "name": "BASELINE: N-gram models + Kneser-Ney smoothing"
+            }]
+        }, {
+            "name": "Sequence Labelling",
+            "children": [{
+                "name": "Approaches",
+                "children": [{
+                    "name": "Rule-based (EngCG)"
+                }, {
+                    "name": "Seperate labels classifier for each token"
+                }, {
+                    "name": "Sequence models (HMM, MEMM, CRFs)"
+                }, {
+                    "name": "Neural Networks"
+                }]
+            }, {
+                "name": "Models",
+                "children": [{
+                    "name": "Hidden Markov Model (HMM)",
+                    "children": [{
+                        "name": "P(y,x) -> Generative models"
+                    }, {
+                        "name": "Baum-Welch algorithm (EM algo.) - for finding hidden variables"
+                    }, {
+                        "name": "Viterbi algorithm - for finding most probable sequence"
+                    }]
+                }, {
+                    "name": "Maximum Entropy Markov Model",
+                    "children": [{
+                        "name": "P(y|x) -> Discriminative model"
+                    }]
+                }, {
+                    "name": "Conditional Random Fields (linear)",
+                    "children": [{
+                        "name": "P(y|x) -> Discriminative model"
+                    }, {
+                        "name": "undirected graph"
+                    }]
+                }, {
+                    "name": "Conditional Random Fields (general form)",
+                    "children": [{
+                        "name": "P(y|x) -> Discriminative model"
+                    }]
+                }]
+            }]
+        }, {
+            "name": "Neural language model",
+            "children": [{
+                "name": "Generalize vectors with 'distributed representation'"
+            }, {
+                "name": "Model",
+                "children": [{
+                    "name": "Distributed representation of context words -> Feed forward NN -> Softmax"
+                }]
+            }]
+        },{
+            "name": "Log-Bilinear language model"
+        }, {
+            "name": "Recurrent Neural Network",
+            "children": [{
+                "name": "LSTM"
+            }, {
+                "name": "GRU"
+            }, {
+                "name": "Gradient clipping"
+            }, {
+                "name": "Dropout for regularization"
+            }]
+        }]
     },{
         "name": "Week 3"
     },{
